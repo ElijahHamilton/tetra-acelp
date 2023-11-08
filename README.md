@@ -15,3 +15,8 @@ No significant codec changes occur when compiling with `-Ofast`.
 
 # Info
 The codec itself opperates at 4566.66666... bit/s second. Although, my example programs pad the bitrate to 4800 bit/s.
+
+# example usage:
+`./encoder input.raw encoded.bin`
+
+`./decoder encoded.bin output.raw`
