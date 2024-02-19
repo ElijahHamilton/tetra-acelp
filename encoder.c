@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
 		printf("frames encoded: %d\r", i);
 		fflush(stdout);
 		tetra_encode(codec, inbuf, encbuf);
-		fwrite(encbuf, 18, 1, fout);
+		fwrite(encbuf, BYTES_PER_FRAME, 1, fout);
 		i++;
 	}
 	return 0;
