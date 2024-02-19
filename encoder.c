@@ -1,7 +1,7 @@
 #include "tetra-codec.h"
 #include <stdio.h>
 
-#define BITS_PER_FRAME 137
+#define BITS_PER_FRAME 18
 #define SAMPLES_PER_FRAME 240
 
 int main(int argc, char *argv[]) {
