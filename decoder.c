@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
 	printf("4566.66666 bit/s tetra codec decoder\n");
 	printf("padded to 4800 bit/s\n\n");
 
-	while(fread(inbuf, 18, 1, fin) == 1) {
+	while(fread(inbuf, BYTES_PER_FRAME, 1, fin) == 1) {
 		printf("frames decoded: %d\r", i);
 		fflush(stdout);
 		tetra_decode(codec, inbuf, outbuf, 0);
