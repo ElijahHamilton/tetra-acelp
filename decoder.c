@@ -1,7 +1,7 @@
 #include "tetra-codec.h"
 #include <stdio.h>
 
-#define BITS_PER_FRAME 137
+#define BYTES_PER_FRAME 18
 #define SAMPLES_PER_FRAME 240
 
 int main(int argc, char *argv[]) {
@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
 	int i = 0;
 
 	short outbuf[SAMPLES_PER_FRAME];
-	unsigned char inbuf[BITS_PER_FRAME];
+	unsigned char inbuf[BYTES_PER_FRAME];
 
 	FILE *fin = fopen(argv[1], "rb");
 	FILE *fout = fopen(argv[2], "wb");
